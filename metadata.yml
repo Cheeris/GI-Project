@@ -6,19 +6,19 @@
 RepoURL: https://github.com/COMP30019/...
 
 # 2. Your team name (plain text, no more than 50 chars)
-TeamName: Sample Team Name
+TeamName: CheeseGo
 
 # 3. List every team member below. Ensure student names/emails match
 #    official UniMelb records exactly (i.e., avoid nicknames or aliases).
 TeamMembers:
-  - Name: Student Name 1
-    Email: ...@student.unimelb.edu.au
-  - Name: Student Name 2
-    Email: ...@student.unimelb.edu.au
-  - Name: Student Name 3
-    Email: ...@student.unimelb.edu.au
+  - Name: Kexin Chen
+    Email: kcc2@student.unimelb.edu.au
+  - Name: Kaisheng Su
+    Email: kaishengs@student.unimelb.edu.au
+  - Name: Feifei Hao
+    Email: feifeih@student.unimelb.edu.au
   # Remove or comment out the following two lines if you have a group of 3
-  - Name: Student Name 4
-    Email: ...@student.unimelb.edu.au
+  - Name: Haoyuan Qin
+    Email: haoyuanq@student.unimelb.edu.au
 
 # And that's it for now!
