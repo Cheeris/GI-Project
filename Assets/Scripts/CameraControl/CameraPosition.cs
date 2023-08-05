@@ -8,20 +8,22 @@ public class CameraPosition : MonoBehaviour
     public GameObject character1;
     public GameObject character2;
     private GameObject currCharacter;
+    private Vector3 distance;
+    private Vector3 ve;
     // Start is called before the first frame update
     void Start()
     {
         currCharacter = character1;
+        distance = new Vector3(0, 15, -10);
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Let the camera's position fixed
-        transform.position = new Vector3(currCharacter.transform.position.x, currCharacter.transform.position.y + 15, currCharacter.transform.position.z -10);
-        transform.rotation = Quaternion.Euler(new Vector3(45, 0, 0));
-        //Let the camera look at the character
-        transform.LookAt(currCharacter.transform.position);
+        //Let the camera move smoothly
+        transform.position = Vector3.SmoothDamp(transform.position, currCharacter.transform.position + distance, ref ve, 0.1f);
+        transform.rotation = Quaternion.Euler(new Vector3(60, 0, 0));
+        
         if (Input.GetKeyDown("q"))
         {
             if (currCharacter == character1)
