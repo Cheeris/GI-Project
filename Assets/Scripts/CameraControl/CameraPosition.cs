@@ -26,7 +26,7 @@ public class CameraPosition : MonoBehaviour
         
         if (Input.GetKeyDown("q"))
         {
-            if (currCharacter == character1)
+            if (currCharacter == character1 && character2.GetComponent<Character2Controller>().isSaved)
             {
                 currCharacter = character2;
             } else
