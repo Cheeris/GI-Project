@@ -143,7 +143,8 @@ Below are examples of markdown features available on GitHub that might be useful
     - This game is a third-person game. The camera moves as the player moves during the game. The camera is fixed on a distinct height above the player. The player is always in the center of the camera’s view. When we switch between the characters, the camera would move to the position of the switched character and focus on it. This player perspective can provide the player a great field of view, which can make the player have quick response to the map situation. Another advantage of this perspective is that it has a smaller possibility to trigger 3D Vertigo syndrome, which makes the player have nausea, vomiting, palpitation.
     - The prototype of the player perspective
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/91307779-5dbb-4342-9704-87ac2ea0b320/Untitled.png)
+    ![Untitled](https://github.com/COMP30019/project-1-cheesego/assets/113833060/6be1dd95-75c6-4706-bf6c-4564f4c1a90c)
+
     
 - **Controls:** Describe the controls for the game. What buttons or keys does the player need to press to play the game? Are there any special controls or combinations of controls? How does the player interact with the game world?
     - Movement: The player can use “w” “a” “s” “d” to control the movement of the character **(可能可以做手柄的适配)**
