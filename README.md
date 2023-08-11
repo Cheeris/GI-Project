@@ -132,10 +132,9 @@ Below are examples of markdown features available on GitHub that might be useful
 - **Target Audience:** The target audience is people who are willing to take out their mobile phones to play a simple game in five minutes of free time every day. This game does not give a strong sense of defeat, it can even have other ways of playing, saving teammates or fighting with enemies can even be the core of this game (although they will be forced to evacuate at the end of the fifth minute) (poor teammate). Therefore, players can easily play this game in five minutes of free time.
 - **Unique Selling Points (USPs):** The main selling point of this game is the earlier stage mode of saving teammates in the early stage and the mode of switching between the two characters after saving teammates in the later stage. The difference between these two modes will gives the player a difference in gameplay and an impetus to drive the story. Therefore, this game can support a variety of different gameplays, and has an open ending.
 - **the ending of story:** The main process of the game is; the player manipulates the character to go to the castle to rescue the character trapped by the machine; second, after finding it. Players can switch between role one and role two, and continue the game afterwards. If the five-minute survival time is up, the players will be forced to evacuate. If character 2 is successfully rescued, the game ends with the best rating. If the player fails to save character 2, the game ends with a medium rating. If character 1 dies and character 2 dies (or character 1 saves character 2 die before), the game ends early and gets the worst rating
-
 ```mermaid
 graph LR
-    A[player(role 1)] -->|to save role2| B(solo play)
+    A[player] -->|to save role2| B(solo play)
     B --> C{role2 servived?}
     C -->|yes| D(can switch between roles)
     D --> E{5min survived?}
