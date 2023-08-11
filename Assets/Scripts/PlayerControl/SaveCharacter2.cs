@@ -13,10 +13,12 @@ public class SaveCharacter2 : MonoBehaviour
     private float radius = 3.5f;
     private float lineWidth = 0.1f;
     private Vector3 center;
+    private Rigidbody rb;
     // Start is called before the first frame update
     void Start()
     {
         parent = transform.parent.gameObject;
+        rb = parent.GetComponent<Rigidbody>();
         timer = 0;
 
         center = transform.parent.position;
@@ -33,6 +35,8 @@ public class SaveCharacter2 : MonoBehaviour
         if (timer >= 3)
         {
             parent.GetComponent<Character2Controller>().isSaved = true;
+            rb.constraints &= ~RigidbodyConstraints.FreezePositionX;
+            rb.constraints &= ~RigidbodyConstraints.FreezePositionZ;
             gameObject.SetActive(false);
         }
     }

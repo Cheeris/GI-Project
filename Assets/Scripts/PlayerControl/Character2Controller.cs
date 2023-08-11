@@ -7,11 +7,13 @@ public class Character2Controller : MonoBehaviour
     public float speed;
     public bool isControlled;
     public bool isSaved;
+    public bool isInQTE;
 
     // Start is called before the first frame update
     void Start()
     {
         isSaved = false;
+        isInQTE = false;
     }
 
     // Update is called once per frame
@@ -22,7 +24,7 @@ public class Character2Controller : MonoBehaviour
         float vertical = Input.GetAxis("Vertical");
         //get the movement direction
         Vector3 dir = new Vector3(horizontal, 0, vertical);
-        if (dir != Vector3.zero && isControlled && isSaved)
+        if (dir != Vector3.zero && isControlled && isSaved && !isInQTE)
         {
             //change the rotation of the character
 
@@ -31,22 +33,6 @@ public class Character2Controller : MonoBehaviour
             transform.Translate(Vector3.forward * Time.deltaTime * speed);
         }
 
-        //Change to another character
-        if (Input.GetKeyDown("q"))
-        {
-            if (!isControlled && GetComponent<Character2Controller>().isSaved)
-            {
-                isControlled = true;
-            }
-            else
-            {
-                isControlled = false;
-            }
-
-        }
-
-
-
         //AI control the character
         if (!isControlled)
         {
@@ -54,5 +40,10 @@ public class Character2Controller : MonoBehaviour
         }
 
 
+    }
+
+    public void setIsInQTE(bool x)
+    {
+        isInQTE = x;
     }
 }

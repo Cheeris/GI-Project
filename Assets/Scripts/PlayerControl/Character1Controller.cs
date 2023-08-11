@@ -31,21 +31,6 @@ public class Character1Controller : MonoBehaviour
             transform.Translate(Vector3.forward * Time.deltaTime * speed);
         }
 
-        //Change to another character
-        if (Input.GetKeyDown("q"))
-        {
-            if (isControlled && character2.GetComponent<Character2Controller>().isSaved)
-            {
-                isControlled = false;
-            } else
-            {
-                isControlled = true;
-            }
-            
-        }
-
-        
-
         //AI control the character
         if (!isControlled)
         {
