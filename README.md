@@ -143,14 +143,18 @@ Below are examples of markdown features available on GitHub that might be useful
     - This game is a third-person game. The camera moves as the player moves during the game. The camera is fixed on a distinct height above the player. The player is always in the center of the camera’s view. When we switch between the characters, the camera would move to the position of the switched character and focus on it. This player perspective can provide the player a great field of view, which can make the player have quick response to the map situation. Another advantage of this perspective is that it has a smaller possibility to trigger 3D Vertigo syndrome, which makes the player have nausea, vomiting, palpitation.
     - The prototype of the player perspective
     
-    ![Untitled](https://github.com/COMP30019/project-1-cheesego/assets/113833060/6be1dd95-75c6-4706-bf6c-4564f4c1a90c)
+
+https://github.com/COMP30019/project-1-cheesego/assets/113833060/94687a8f-df25-43cd-8576-515a5119cd32
+
+
 
     
 - **Controls:** Describe the controls for the game. What buttons or keys does the player need to press to play the game? Are there any special controls or combinations of controls? How does the player interact with the game world?
     - Movement: The player can use “w” “a” “s” “d” to control the movement of the character **(可能可以做手柄的适配)**
     - Switch between the characters: The player can press “q” to switch between the two characters
         
-        [project-1-cheesegoTest - TestScene - Windows, Mac, Linux - Unity 2022.3.5f1 _DX11_ 2023-08-09 13-57-32.mp4](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/61581e5e-677a-41d8-ad17-c251858130ed/project-1-cheesegoTest_-_TestScene_-_Windows_Mac_Linux_-_Unity_2022.3.5f1__DX11__2023-08-09_13-57-32.mp4)
+        ![Untitled](https://github.com/COMP30019/project-1-cheesego/assets/113833060/27af47e1-abe4-48d3-b655-e2419df44bdd)
+
         
     - Attack:  The player can press “j” to perform a normal attack, press “k” to perform a skill
     - Opening the treasure chest: The player can control the character 2 to hack into the treasure chest and use “w” “a” “s” “d” to finish a simple QTE (Quick Time Event) in order to open the treasure chest.
