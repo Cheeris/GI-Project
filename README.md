@@ -20,6 +20,14 @@ Below are examples of markdown features available on GitHub that might be useful
 _Exciting title_ is a first-person shooter (FPS) set in... we're not sure yet. It's a bit like _Doom_ meets _Animal Crossing_, but with a twist. The player must... 
 
 > "This is a quote from the game designer, explaining why this game is going to be the best thing since sliced bread." - Game Designer
+>
+### Game Overview
+This section should describe the general concept of the game, its main themes, and overall player experience. Here are some questions you might want to answer:
+
+Core Concept: What is the core concept of your game? What is the main idea behind your game? Who or what is the "player", and what is their role in the game?
+Genre: What genre does your game belong to? What are some other games in this genre? Is the concept inspired by another creative work (could be a game but doesn't have to be)? Remember that the "time survival" mechanic is a requirement for this project, but it doesn't necessarily have to constrain the genre of your game.
+Target Audience: Who is your game aimed at? Is there any demographic you are targeting in particular? Note that later this semester you will be required to conduct user testing with your target audience (it should be feasible to easily find people in your target audience to test your game).
+Unique Selling Points (USPs): What makes your game unique? What are some of the key features that will make your game stand out from others in the same genre?
 
 ### Emojis and Icons
 
