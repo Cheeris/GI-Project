@@ -127,15 +127,29 @@ Below are examples of markdown features available on GitHub that might be useful
 
 ## **Game Overview**
 
-- **Core Concept:** What is the core concept of your game? What is the main idea behind your game? Who or what is the "player", and what is their role in the game?
-- **Genre:** What genre does your game belong to? What are some other games in this genre? Is the concept inspired by another creative work (could be a game but doesn't have to be)? Remember that the "time survival" mechanic is a requirement for this project, but it doesn't necessarily have to constrain the genre of your game.
-- **Target Audience:** Who is your game aimed at? Is there any demographic you are targeting in particular? Note that later this semester you will be required to conduct user testing with your target audience (it should be feasible to easily find people in your target audience to test your game).
-- **Unique Selling Points (USPs):** What makes your game unique? What are some of the key features that will make your game stand out from others in the same genre?
+- **Core Concept:** The core concepts are rescue and survival. The player takes the role of rescuing his teammates from breaking into the monster's base. After rescuing the teammate, the player can switch back and forth between the two characters and try to survive from the oncoming tides of monsters.
+- **Genre:** This is a survival game, adventure game, indie game, fighting game. Also in this genre: Don't Starve, Red Dead Redemption, etc. The concept is inspired by games like Don't Starve and Potato Brothers, also Nier's Automata. It referenced the scenario of Mech's Doomsday Crisis and added the idea of surviving and rescuing teammates. The idea for Monster Tide came from the Potato Brothers
+- **Target Audience:** The target audience is people who are willing to take out their mobile phones to play a simple game in five minutes of free time every day. This game does not give a strong sense of defeat, it can even have other ways of playing, saving teammates or fighting with enemies can even be the core of this game (although they will be forced to evacuate at the end of the fifth minute) (poor teammate). Therefore, players can easily play this game in five minutes of free time.
+- **Unique Selling Points (USPs):** The main selling point of this game is the earlier stage mode of saving teammates in the early stage and the mode of switching between the two characters after saving teammates in the later stage. The difference between these two modes will gives the player a difference in gameplay and an impetus to drive the story. Therefore, this game can support a variety of different gameplays, and has an open ending.
+- **the ending of story:** The main process of the game is; the player manipulates the character to go to the castle to rescue the character trapped by the machine; second, after finding it. Players can switch between role one and role two, and continue the game afterwards. If the five-minute survival time is up, the players will be forced to evacuate. If character 2 is successfully rescued, the game ends with the best rating. If the player fails to save character 2, the game ends with a medium rating. If character 1 dies and character 2 dies (or character 1 saves character 2 die before), the game ends early and gets the worst rating
+
+```mermaid
+graph LR
+    A[player(role 1)] -->|to save role2| B(solo play)
+    B --> C{role2 servived?}
+    C -->|yes| D(can switch between roles)
+    D --> E{5min survived?}
+    C -->|no| F{5min survived?}
+    E -->|yes| G[Good ending]
+    E -->|no| H[Bad ending1]
+    F -->|yes| I[Bad ending2]
+    F -->|no| J[worst ending]
+```
 
 ## ****Story and Narrative****
 
-- **Backstory:** What is the backstory of the game? What is the setting? What is the main conflict? If there is a story, how does it unfold as the player progresses through the game?
-- **Characters:** Is the player the only character? Is there a villain or boss? Who are the main characters in the game? What are their backgrounds? What are their motivations? What are their relationships to each other? What are their goals? What are their personalities? What do they look like?
+- **Backstory:** The background of the game is the story of the protagonist going to save his teammate in the mechanically-made doomsday. At the beginning of the story, the protagonist manipulated by the player will break into the enemy's (that is, mechanical) base to rescue the teammate imprisoned by the machine, and then try to wait (while fighting with the machines) for the rescue at the fifth minute and escape from the base.
+- 可以在此补充对角色们的细化（比如出于什么动机或者原因 该角色/敌人具备了此能力）
 
 ## ****Gameplay and Mechanics****
 
