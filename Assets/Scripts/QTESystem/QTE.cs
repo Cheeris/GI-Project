@@ -16,6 +16,7 @@ public class QTE : MonoBehaviour
     private System.Random rd = new System.Random();
     private State state;
     private float timer;
+    private float shutdownTimer;
     private Character2Controller controller;
     
     // Start is called before the first frame update
@@ -94,22 +95,21 @@ public class QTE : MonoBehaviour
         {
             //TODO: Cause damage to the enemy or make the enemy attack other enemies
             Debug.Log("Successful");
-            controller.setIsInQTE(false);
-            enabled = false;
+            shutdown();
         } 
         //If QTE fails, cause damage to character 2 and end the QTE
         else if (state == State.fail)
         {
             //TODO: Cause damage to character 2
             Debug.Log("Fail");
-            controller.setIsInQTE(false);
-            enabled = false;
+            shutdown();
         }
 
     }
 
     private void OnEnable()
     {
+        shutdownTimer = 0;
         timer = 0;
         controller = character2.GetComponent<Character2Controller>();
         controller.setIsInQTE(true);
@@ -121,12 +121,36 @@ public class QTE : MonoBehaviour
             QTEOrder.Add(keys[rdNumber]);
             Debug.Log(keys[rdNumber]);
         }
+        GameObject UIBackground = this.transform.GetChild(0).gameObject;
+        UIBackground.SetActive(true) ;
     }
 
-    private enum State
+    public enum State
     {
         successful,
         fail,
         inProgress
+    }
+
+    public List<KeyCode> getQTEOrder()
+    {
+        return QTEOrder;
+    }
+
+    public State getState()
+    {
+        return this.state;
+    }
+
+    private void shutdown()
+    {
+        shutdownTimer += Time.deltaTime;
+        if (shutdownTimer > 1)
+        {
+            controller.setIsInQTE(false);
+            enabled = false;
+            GameObject UIBackground = this.transform.GetChild(0).gameObject;
+            UIBackground.SetActive(false);
+        }
     }
 }
