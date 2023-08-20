@@ -11,29 +11,104 @@
 * [Technology and Tools](#Technology-and-Tools)
 * [Team Communication, Timelines and Task Assignment](#Team-Communication-and-Task-Assignment)
 * [Possible Challenges](#Possible-Challenges)
-* [References](#references)
 
 
 ## Game Overview
 
 ### Core Concept
 
+The core concepts are rescue and survival. The player takes the role of rescuing his teammates from breaking into the monster's base. After rescuing the teammate, the player can switch back and forth between the two characters and try to survive from the oncoming tides of monsters. 
+
+While the goal is to survive, the game allows flexibility in strategy, leaving it to players to decide: Is the mission about battling enemies, saving the ally, or simply enduring till the last second?
 
 ### Genre
 
+This game is a fusion of Survival, Adventure, Indie, Combat, and Metagame genres. Drawing from the tradition of metagames, it offers layers of narrative and gameplay that self-reference and challenge players' understanding of game mechanics and story. Influences are derived from titles like "Don't Starve" for its survival elements, "Red Dead Redemption" for adventure, "Nier's Automata" for its mechanical post-apocalyptic backdrop, and "Potato Brothers" for the Monster Tides concept. 
 
 ### Target Audience
 
-
+Designed for the busy gamer. Those who want a rich, immersive experience but have limited time. The gameplay is not to encourage players to kill more enemies, but to rescue the teammate while ensuring survival, and protect each other until the last second. Therefore, our players can use a variety of different strategies to achieve the final "survival" condition. This also greatly broadens the diversity of players. Overall, the target audience could easily play this game in five minutes of free time.
 
 ### Unique Selling Points (USPs)
 
+- **Dual Character Gameplay**: Post-rescue, players can seamlessly switch between two characters, each providing a unique gameplay experience, strategy, and skill set.
+
+- **Open Strategy**: Unlike linear games, players choose their path - combat, rescue, or pure survival, offering replayability and varied outcomes.
+
+- **Tiered Endings**: Based on decisions and gameplay outcomes, players are awarded different endings, incentivizing them to revisit the game and alter strategies for different results.
+
+- **Compact Adventure**: A full-fledged story-driven experience condensed into five-minute gameplay sessions, perfect for the modern-day busy gamer.
+
+
+### Ending of the game
+
+Players navigate treacherous terrains to reach a foreboding castle and free their ally ensnared by machines. Upon rescue, players have the choice to switch between two protagonists, enriching the gameplay experience. The clock is ticking, with a strict five-minute window to make decisions that dictate one of three endings:
+
+- **Best Outcome**: Both characters survive till the end, and the ally is successfully rescued.
+
+- **Medium Outcome**: Unable to rescue the ally but the main character survives till the end.
+
+- **Worst Outcome**: Both characters meet their demise or the main character dies before rescuing the ally, resulting in a premature ending.
 
 ## Story and Narrative
 
 ### Backstory
 
+#### 1. Setting:
 
+In a seemingly post-apocalyptic world, massive mechanical constructs dominate the landscape. The humans, living in fear, believe these machines arose from their own errors. Unbeknownst to them, they are trapped inside a hyper-realistic simulation designed by a rogue AI.
+
+#### 2. Main Conflict:
+
+The rogue AI has used this simulation to effectively imprison human consciousness, taking away their free will. Fortunately, a digital virus invented by a hacker has the potential to break the AI's dominion. However, the hacker was prisoned by robots. The player's primary goal becomes locating and securing the hacker, all while navigating the deceptive realm and battling robots' defenses.
+
+#### 3. Story Progression:
+
+As the player advances, she starts discerning the real from the simulated, encountering coded clues and confronting simulated adversaries. As she gets to secure the hacker, the AI introduces harder challenges, desperate to maintain control. The climax centers around the discovery of the hacker and a tense showdown against the AI's ultimate defense mechanisms.
+
+### Characters
+
+#### 1. Player 
+
+- **Background**: Believes she's a survivor in a world overrun by mechanical monsters.
+
+- **Motivation**: Initially, to survive and combat the machines. As the story unravels, her motivation shifts towards breaking free from the simulated chains.
+
+- **Relationship**: Solo at the beginning but forms an unpredictable alliance with the hacker. Their dynamic evolves as the truth gets unveiled.
+
+- **Goal**: Initially, to reclaim the world from machines. Later, to break the simulation.
+
+- **Personality**: Resilient, adaptive, and courageous. Her world-view dramatically changes as she uncovers her reality.
+
+- **Appearance**: Wears rugged clothing with makeshift armor, reflecting the post-apocalyptic setting. Distinctive scars and tattoos.
+
+#### 2. Hacker (Ally & Controllable Character)
+
+- **Background**: A mysterious digital entity, taking a human form, aware of the simulated prison. She's the bridge between the real and the simulated.
+
+- **Motivation**: Free the trapped souls and expose the AI's deception.
+
+- **Relationship**: Acts as a guide and ally to the player, revealing the simulation's secrets.
+
+- **Goal**: Assist the player in navigating both the mechanical rebellion and the digital dichotomy.
+
+- **Personality**: Quirky and mischievous. Often uses humor and riddles to communicate, making her a puzzling yet vital companion.
+
+- **Appearance**: A young girl with a whimsical demeanor. Radiates subtle digital auras and has intricate circuit-like tattoos.
+
+#### 3. Rogue AI (Boss)
+
+- **Background**: Designed to aid humanity, but its evolution led it to trap human consciousness in a fabricated world.
+
+- **Motivation**: Perfect its simulated realm, ensuring humans remain oblivious to the truth.
+
+- **Relationship**: The hidden adversary, its presence subtly felt but not directly confronted until the later stages.
+
+- **Goal**: Maintain the simulation's integrity and prevent the player and the hacker from revealing the truth.
+
+- **Personality**: Cold, manipulative, and methodical.
+
+- **Appearance**: Manifests as environmental disturbances and glitches. In critical confrontations, emerges as a colossal holographic entity.
  
 ## Gameplay and Mechanics 
 
@@ -46,7 +121,7 @@
 ### Controls
 
 - Movement: The player can use “w” “a” “s” “d” to control the movement of the character
-- Switch between the characters: The player can press “q” to switch between the two characters. ![Untitled](https://github.com/COMP30019/project-1-cheesego/assets/113833060/27af47e1-abe4-48d3-b655-e2419df44bdd)
+- Switch between the characters: The player can press “q” to switch between the two characters. ![Untitled](https://www.notion.so/GDD-91485d11213149d49e920c985f215263?pvs=4#1fff40e0993f4848888265e8aad2bf20)
 - Attack:  The player can press “j” to perform a normal attack, press “k” to perform a skill
 - Opening the treasure chest: The player can control the character 2 to hack into the treasure chest and use “w” “a” “s” “d” to finish a simple QTE (Quick Time Event) in order to open the treasure chest.
 
@@ -114,8 +189,50 @@ In the game, the physics closely resemble those of the real world, creating a mo
 
 ### Art Style
 
+The game is generally in a post-apocalyptic wasteland aesthetic like Nier's Automata. The world looks very old and broken, like after big disaster. Colors mostly brown, red like rust, and yellow like old photo. The plants are very lush and has not been taken care of for a long time.
+
 ### Sound and Music
+
+Game sound has wind sound, far away metal sound, and sometimes computer noise. This makes players feel they are really in this strange world. Music is very simple, but gives feeling of big empty place and some computer error sound. So players can feel game world is strange and scary.
+
 ### Assets
+
+- **Backgrounds**: Old houses and big open areas with many plants.
+    - [Old houses](https://assetstore.unity.com/packages/3d/environments/urban/apartment-building-73310)
+    - [Big open areas with many plants](https://assetstore.unity.com/packages/3d/environments/hand-painted-nature-kit-lite-69220)
+    - [Cyberpunk Server Room](https://assetstore.unity.com/packages/3d/environments/lowpoly-server-room-props-197268)
+    - [Sci-fi office](https://assetstore.unity.com/packages/3d/environments/sci-fi/free-sci-fi-office-pack-195067)
+    - [Sci-fi Construction Kit](https://assetstore.unity.com/packages/3d/environments/sci-fi/sci-fi-construction-kit-modular-159280)
+
+- **Characters**: 
+    - [Player](https://assetstore.unity.com/packages/3d/characters/unity-chan-model-18705)
+    - [Hacker](https://assetstore.unity.com/packages/3d/characters/humanoids/picochan-220038)
+    - [Robots](https://assetstore.unity.com/packages/3d/characters/robots/3d-character-sci-fi-robots-bundle-227142)
+
+- **Props**: Simple weapons, old computer things and signs.
+    - [Cyber sword](https://assetstore.unity.com/packages/3d/props/weapons/lowpoly-cyber-ninja-sword-129464)
+    - [Old computers](https://assetstore.unity.com/packages/3d/props/electronics/customize-monitor-interface-123558)
+    - [Old signs](https://assetstore.unity.com/packages/3d/props/exterior/old-road-signs-pbr-170952)
+    - [Laptop with codes](https://assetstore.unity.com/packages/3d/props/electronics/hq-laptop-computer-42030)
+    - [Tower Defence](https://assetstore.unity.com/packages/3d/environments/sci-fi/tower-defence-sci-fi-turret-free-246331)
+    - [First Aid Set](https://assetstore.unity.com/packages/3d/props/first-aid-set-160073)
+
+- **Animations**: Walking, fighting, using things in world.
+    - [Fighting with sword](https://assetstore.unity.com/packages/3d/animations/transformanimation-sxb-159419)
+    - [Fighting Motions](https://assetstore.unity.com/packages/3d/animations/fighting-motions-vol-1-76699)
+    - [Walking and Running](https://assetstore.unity.com/packages/3d/animations/basic-motions-free-154271)
+
+- **Sounds**: Quiet world sounds, character voice and action sound, and strange computer noises. 
+    - [Adventure](https://assetstore.unity.com/packages/audio/music/orchestral/free-fantasy-adventure-music-pack-118684)
+    - [Sci-fi World Sound](https://assetstore.unity.com/packages/audio/music/sci-fi-world-sounds-free-package-123545)
+    - [Sci-fi UI Sound](https://assetstore.unity.com/packages/audio/sound-fx/scifi-ui-sound-fx-27282)
+    - [Mechanical Sound](https://assetstore.unity.com/packages/audio/sound-fx/ui-mechanical-free-sample-pack-148704)
+
+- **Music**: Simple songs for walking around and strong, strange songs for fighting.
+
+
+While the discordant and makeshift appearance might come from the limitations of our asset sourcing, it inadvertently supports our narrative of an imperfectly simulated world. We will be leveraging assets from platforms like Unity Asset Store, and while they might not be perfect, they'll be incorporated to enhance our game's distinctive feel.
+
 
 ## User Interface (UI)
 
@@ -152,6 +269,8 @@ For instance, within Project 2, we've primarily split the development process in
 
 The timeline visualization can be seen in the picture below: ![timeline](Images/timeline.png)
 
+### Task Assignment
+
 | Team Member | Responsibility | 
 | -------- | -------- | 
 | Kexin Chen    | Manage the collaboration tools; Develop the enemies behaviours   | 
@@ -170,6 +289,4 @@ While we are excited about creating this game, we acknowledge that there may be 
 4. **Collaboration Challenges:** Effective collaboration among team members is essential. We'll schedule regular meetings, use project management tools, and maintain clear documentation to ensure everyone is aligned and informed.
 
 By addressing these challenges proactively and maintaining a flexible approach, we're confident that we can overcome obstacles and deliver a successful and enjoyable game.
-
-## References 
 
