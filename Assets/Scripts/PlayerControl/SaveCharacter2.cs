@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.UI;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class SaveCharacter2 : MonoBehaviour
 {
@@ -35,6 +36,8 @@ public class SaveCharacter2 : MonoBehaviour
         if (timer >= 3)
         {
             parent.GetComponent<Character2Controller>().isSaved = true;
+            parent.GetComponent<NavMeshAgent>().enabled = true;
+            parent.GetComponent<Navigation>().enabled = true;
             rb.constraints &= ~RigidbodyConstraints.FreezePositionX;
             rb.constraints &= ~RigidbodyConstraints.FreezePositionZ;
             gameObject.SetActive(false);
