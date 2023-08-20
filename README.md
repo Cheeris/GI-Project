@@ -121,7 +121,11 @@ As the player advances, she starts discerning the real from the simulated, encou
 ### Controls
 
 - Movement: The player can use “w” “a” “s” “d” to control the movement of the character
-- Switch between the characters: The player can press “q” to switch between the two characters. ![Untitled](https://www.notion.so/GDD-91485d11213149d49e920c985f215263?pvs=4#1fff40e0993f4848888265e8aad2bf20)
+- Switch between the characters: The player can press “q” to switch between the two characters. 
+
+https://github.com/COMP30019/project-1-cheesego/assets/108605930/e3ddf337-296e-4641-886c-95bad6e6caea
+
+
 - Attack:  The player can press “j” to perform a normal attack, press “k” to perform a skill
 - Opening the treasure chest: The player can control the character 2 to hack into the treasure chest and use “w” “a” “s” “d” to finish a simple QTE (Quick Time Event) in order to open the treasure chest.
 
