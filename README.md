@@ -193,7 +193,23 @@ In the game, the physics closely resemble those of the real world, creating a mo
 
 ### Art Style
 
-The game is generally in a post-apocalyptic wasteland aesthetic like Nier's Automata. The world looks very old and broken, like after big disaster. Colors mostly brown, red like rust, and yellow like old photo. The plants are very lush and has not been taken care of for a long time.
+The game's art style seamlessly melds a primeval forest with the sleek futurism of a sci-fi castle, creating a contradictory but harmonious visual. The primeval forest is an explosion of natural colors: vibrant greens and rich browns that evoke a sense of untouched wonder.
+    
+Conversely, the castle is a study in contrasts, the inner sci-fi style with its sharp lines and gleaming metallic surfaces reflecting the advanced technology it houses. Neon lights and holographic displays punctuate the futuristic architecture, imbuing it with an otherworldly aura. The juxtaposition between the primeval forest and the sci-fi castle serves as a backdrop for the narrative's dual nature, one that is both primitive and technologically advanced.
+    
+The main characters add depth and dynamism to this unique world. The Japanese cute girl, possessing a blend of traditional and contemporary fashion, navigates high-tech setting with ease. With her piercing gaze and determined demeanor, she's a skilled hacker capable of infiltrating even the most secure AI networks. On the other hand, Nier, devoid of armor but armed with cold weapons, stands as a stark contrast. Her movements are calculated and swift, showcasing her expertise as a warrior who thrives in the heat of battle.
+    
+AI robots, the game's enemies, come in an array of forms, from agile stature to towering mechs. Their designs reflect a fusion of mechanical precision and futuristic aesthetic, each with its unique capabilities that challenge players' strategies.
+    
+The UI complements the art style with intuitive icons that blend seamlessly with the environment. The user interface avoids being obtrusive, opting for minimalist designs that fit the aesthetic of both settings.
+    
+Overall, the game's art style weaves a compelling visual narrative, intertwining themes of nature, technology, and heroism. The characters, settings, and enemies all converge to create an immersive experience that captures players' imagination.
+    
+Nier: Automata is the inspiration of the game background story and our art-style, and below is a link tok the picture of its game setting and a introduction on wikipedia.
+https://en.wikipedia.org/wiki/Nier:_Automata
+![photo](https://images6.alphacoders.com/655/655990.jpg)
+![photo](https://c4.wallpaperflare.com/wallpaper/816/818/412/digital-art-artwork-video-games-white-hair-wallpaper-preview.jpg)
+
 
 ### Sound and Music
 
