@@ -80,7 +80,7 @@ As the player advances, she starts discerning the real from the simulated, encou
 
 - **Personality**: Resilient, adaptive, and courageous. Her world-view dramatically changes as she uncovers her reality.
 
-- **Appearance**: Wears rugged clothing with makeshift armor, reflecting the post-apocalyptic setting. Distinctive scars and tattoos.
+- **Appearance**: ![unity-chan](https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/debb6b2e-a810-4507-984a-ce9ac23956a7.webp)
 
 #### 2. Hacker (Ally & Controllable Character)
 
@@ -94,7 +94,7 @@ As the player advances, she starts discerning the real from the simulated, encou
 
 - **Personality**: Quirky and mischievous. Often uses humor and riddles to communicate, making her a puzzling yet vital companion.
 
-- **Appearance**: A young girl with a whimsical demeanor. Radiates subtle digital auras and has intricate circuit-like tattoos.
+- **Appearance**: A young girl with a whimsical demeanor. ![picochan](https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/251c7c61-fd97-4dcc-b9ad-ff5e445ad745.webp)
 
 #### 3. Rogue AI (Boss)
 
@@ -108,7 +108,7 @@ As the player advances, she starts discerning the real from the simulated, encou
 
 - **Personality**: Cold, manipulative, and methodical.
 
-- **Appearance**: Manifests as environmental disturbances and glitches. In critical confrontations, emerges as a colossal holographic entity.
+- **Appearance**: Manifests as environmental disturbances and glitches. In critical confrontations, emerges as a colossal holographic entity. ![robot](https://assetstorev1-prd-cdn.unity3d.com/key-image/d9d494a9-e2b1-4d3e-8b67-5abaec48af3e.webp)
  
 ## Gameplay and Mechanics 
 
