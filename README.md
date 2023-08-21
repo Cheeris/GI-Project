@@ -214,8 +214,12 @@ https://en.wikipedia.org/wiki/Nier:_Automata
 
 
 ### Sound and Music
+An intense marching tune has been applied through out the game to keep the player constantly vigilant, immersing them in an environment fraught with lurking danger, and ready to fight.
 
-Game sound has wind sound, far away metal sound, and sometimes computer noise. This makes players feel they are really in this strange world. Music is very simple, but gives feeling of big empty place and some computer error sound. So players can feel game world is strange and scary.
+The game's sound effects encompass the sound of weapons clashing in combat, as well as supplementary sounds accompanying computer interactions and sci-fi style environmental shifts.
+
+While we've been contemplating dialogue between the protagonist and the antagonist， whether to provide voice acting or utilize text-to-speech conversion for this interaction is a matter we are currently exploring and experimenting with to determine the optimal approach.
+
 
 ### Assets
 
@@ -244,20 +248,34 @@ Game sound has wind sound, far away metal sound, and sometimes computer noise. T
     - [Fighting Motions](https://assetstore.unity.com/packages/3d/animations/fighting-motions-vol-1-76699)
     - [Walking and Running](https://assetstore.unity.com/packages/3d/animations/basic-motions-free-154271)
 
-- **Sounds**: Quiet world sounds, character voice and action sound, and strange computer noises. 
-    - [Adventure](https://assetstore.unity.com/packages/audio/music/orchestral/free-fantasy-adventure-music-pack-118684)
-    - [Sci-fi World Sound](https://assetstore.unity.com/packages/audio/music/sci-fi-world-sounds-free-package-123545)
+- **Sounds Effects**: Quiet world sounds, character voice and action sound, and strange computer noises. 
+    
     - [Sci-fi UI Sound](https://assetstore.unity.com/packages/audio/sound-fx/scifi-ui-sound-fx-27282)
     - [Mechanical Sound](https://assetstore.unity.com/packages/audio/sound-fx/ui-mechanical-free-sample-pack-148704)
+    - [Helicopter Sound Effect] (https://pixabay.com/sound-effects/search/helicopter/)
+    - [Metal fighting] (https://assetstore.unity.com/packages/audio/music/rock/cyber-metal-music-213902)
 
 - **Music**: Simple songs for walking around and strong, strange songs for fighting.
 
+- [Adventure background music] (https://assetstore.unity.com/packages/audio/music/orchestral/free-fantasy-adventure-music-pack-118684)
+    - [Bio-tech background music] (https://assetstore.unity.com/packages/audio/music/original-soundtrack-biotech-incident-202184) 
+    - [Sci-fi World music](https://assetstore.unity.com/packages/audio/music/sci-fi-world-sounds-free-package-123545)
+    - [Forest background music] (https://assetstore.unity.com/packages/audio/music/tribal-jungle-music-free-pack-131414)
+    - [castle backgroung music- cyberware] (https://assetstore.unity.com/packages/audio/music/electronic/cyberware-game-music-pack-216764)
+    - [castle adventure - cyberpunk] (https://assetstore.unity.com/packages/audio/music/electronic/free-cyberpunk-sci-fi-soundtrack-183868)
 
 While the discordant and makeshift appearance might come from the limitations of our asset sourcing, it inadvertently supports our narrative of an imperfectly simulated world. We will be leveraging assets from platforms like Unity Asset Store, and while they might not be perfect, they'll be incorporated to enhance our game's distinctive feel.
 
 
 ## User Interface (UI)
 
+Rough UI sketch of the game
+https://excalidraw.com/#json=YecFWfyDGkHfvD8K2axz3,P8-oSnWhFNoV45xguWvdVQ
+![photo](https://excalidraw.com/#json=YecFWfyDGkHfvD8K2axz3,P8-oSnWhFNoV45xguWvdVQ)
+
+
+Rought UI sketch using current resources
+![image](https://github.com/COMP30019/project-1-cheesego/assets/111496611/1fdae7b5-1d5d-4ef0-98f9-4a6f5d2d170a)
 
 
 ## Technology and Tools
