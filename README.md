@@ -270,8 +270,9 @@ While the discordant and makeshift appearance might come from the limitations of
 ## User Interface (UI)
 
 Rough UI sketch of the game
+
 https://excalidraw.com/#json=YecFWfyDGkHfvD8K2axz3,P8-oSnWhFNoV45xguWvdVQ
-![image](https://excalidraw.com/#json=YecFWfyDGkHfvD8K2axz3,P8-oSnWhFNoV45xguWvdVQ)
+<img width="604" alt="image" src="https://github.com/COMP30019/project-1-cheesego/assets/111496611/aff32c8a-22ec-4d97-9dea-f7eda4e4e290">
 
 
 Rought UI sketch using current resources
