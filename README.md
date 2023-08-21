@@ -269,13 +269,19 @@ While the discordant and makeshift appearance might come from the limitations of
 
 ## User Interface (UI)
 
-Rough UI sketch of the game
+We aim to create a UI with a clean and straightforward design. As a result, during gameplay, both the protagonist's and enemies' health bars will be displayed. In line with our concept, the game's perspective shifts with the protagonist, so the protagonist's health bar is positioned in the top-left corner of the UI to remain prominent even when the perspective changes. Similarly, enemy health bars are placed above individual enemies to maintain the immersive experience.
+
+Furthermore, we have discarded the traditional inventory system to enhance the UI's simplicity, allowing players to become fully engrossed in the game. A scoring system will be positioned at the center of the UI after a game victory to evaluate the player's performance, encouraging replayability and incentivizing players to explore the game world and its backstory, ultimately striving for a perfect completion.
+
+
+
+Rough UI sketch of the game (figure 1)
 
 https://excalidraw.com/#json=YecFWfyDGkHfvD8K2axz3,P8-oSnWhFNoV45xguWvdVQ
 <img width="604" alt="image" src="https://github.com/COMP30019/project-1-cheesego/assets/111496611/aff32c8a-22ec-4d97-9dea-f7eda4e4e290">
 
 
-Rought UI sketch using current resources
+Rought UI sketch using current resources (figure 2)
 ![image](https://github.com/COMP30019/project-1-cheesego/assets/111496611/1fdae7b5-1d5d-4ef0-98f9-4a6f5d2d170a)
 
 
