@@ -206,7 +206,9 @@ The UI complements the art style with intuitive icons that blend seamlessly with
 Overall, the game's art style weaves a compelling visual narrative, intertwining themes of nature, technology, and heroism. The characters, settings, and enemies all converge to create an immersive experience that captures players' imagination.
     
 Nier: Automata is the inspiration of the game background story and our art-style, and below is a link tok the picture of its game setting and a introduction on wikipedia.
+
 https://en.wikipedia.org/wiki/Nier:_Automata
+
 ![photo](https://images6.alphacoders.com/655/655990.jpg)
 ![photo](https://c4.wallpaperflare.com/wallpaper/816/818/412/digital-art-artwork-video-games-white-hair-wallpaper-preview.jpg)
 
