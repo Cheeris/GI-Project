@@ -252,17 +252,17 @@ While we've been contemplating dialogue between the protagonist and the antagoni
     
     - [Sci-fi UI Sound](https://assetstore.unity.com/packages/audio/sound-fx/scifi-ui-sound-fx-27282)
     - [Mechanical Sound](https://assetstore.unity.com/packages/audio/sound-fx/ui-mechanical-free-sample-pack-148704)
-    - [Helicopter Sound Effect] (https://pixabay.com/sound-effects/search/helicopter/)
-    - [Metal fighting] (https://assetstore.unity.com/packages/audio/music/rock/cyber-metal-music-213902)
+    - [Helicopter Sound Effect](https://pixabay.com/sound-effects/search/helicopter/)
+    - [Metal fighting](https://assetstore.unity.com/packages/audio/music/rock/cyber-metal-music-213902)
 
 - **Music**: Simple songs for walking around and strong, strange songs for fighting.
 
-- [Adventure background music] (https://assetstore.unity.com/packages/audio/music/orchestral/free-fantasy-adventure-music-pack-118684)
-    - [Bio-tech background music] (https://assetstore.unity.com/packages/audio/music/original-soundtrack-biotech-incident-202184) 
+    - [Adventure background music](https://assetstore.unity.com/packages/audio/music/orchestral/free-fantasy-adventure-music-pack-118684)
+    - [Bio-tech background music](https://assetstore.unity.com/packages/audio/music/original-soundtrack-biotech-incident-202184) 
     - [Sci-fi World music](https://assetstore.unity.com/packages/audio/music/sci-fi-world-sounds-free-package-123545)
-    - [Forest background music] (https://assetstore.unity.com/packages/audio/music/tribal-jungle-music-free-pack-131414)
-    - [castle backgroung music- cyberware] (https://assetstore.unity.com/packages/audio/music/electronic/cyberware-game-music-pack-216764)
-    - [castle adventure - cyberpunk] (https://assetstore.unity.com/packages/audio/music/electronic/free-cyberpunk-sci-fi-soundtrack-183868)
+    - [Forest background music](https://assetstore.unity.com/packages/audio/music/tribal-jungle-music-free-pack-131414)
+    - [castle backgroung music- cyberware](https://assetstore.unity.com/packages/audio/music/electronic/cyberware-game-music-pack-216764)
+    - [castle adventure - cyberpunk](https://assetstore.unity.com/packages/audio/music/electronic/free-cyberpunk-sci-fi-soundtrack-183868)
 
 While the discordant and makeshift appearance might come from the limitations of our asset sourcing, it inadvertently supports our narrative of an imperfectly simulated world. We will be leveraging assets from platforms like Unity Asset Store, and while they might not be perfect, they'll be incorporated to enhance our game's distinctive feel.
 
@@ -271,7 +271,7 @@ While the discordant and makeshift appearance might come from the limitations of
 
 Rough UI sketch of the game
 https://excalidraw.com/#json=YecFWfyDGkHfvD8K2axz3,P8-oSnWhFNoV45xguWvdVQ
-![photo](https://excalidraw.com/#json=YecFWfyDGkHfvD8K2axz3,P8-oSnWhFNoV45xguWvdVQ)
+![image](https://excalidraw.com/#json=YecFWfyDGkHfvD8K2axz3,P8-oSnWhFNoV45xguWvdVQ)
 
 
 Rought UI sketch using current resources
