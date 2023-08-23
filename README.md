@@ -23,7 +23,7 @@ While the goal is to survive, the game allows flexibility in strategy, leaving i
 
 ### Genre
 
-This game is a fusion of Survival, Adventure, Indie, Combat, and Metagame genres. Drawing from the tradition of metagames, it offers layers of narrative and gameplay that self-reference and challenge players' understanding of game mechanics and story. Influences are derived from titles like "Don't Starve" for its survival elements, "Red Dead Redemption" for adventure, "Nier's Automata" for its mechanical post-apocalyptic backdrop, and "Potato Brothers" for the Monster Tides concept. 
+This game is a fusion of Survival, Adventure, Indie, Combat, and Metagame genres. Drawing from the tradition of metagames, it offers layers of narrative and gameplay that self-reference and challenge players' understanding of game mechanics and story. Influences are derived from titles like "Don't Starve" for its survival elements, "Nier's Automata" for its mechanical post-apocalyptic backdrop, and "Potato Brothers" for the Monster Tides concept. 
 
 ### Target Audience
 
@@ -68,7 +68,7 @@ As the player advances, she starts discerning the real from the simulated, encou
 
 ### Characters
 
-#### 1. Player 
+#### 1. Striker (Controllable Character)
 
 - **Background**: Believes she's a survivor in a world overrun by mechanical monsters.
 
