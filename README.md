@@ -31,9 +31,9 @@ Designed for the busy gamer. Those who want a rich, immersive experience but hav
 
 ### Unique Selling Points (USPs)
 
-- **Dual Character Gameplay**: Post-rescue, players can seamlessly switch between two characters, each providing a unique gameplay experience, strategy, and skill set.
+- **Dual Character Gameplay**: Upon rescue, players can seamlessly switch between two characters, each providing a unique gameplay experience, strategy, and skill set.
 
-- **Open Strategy**: Unlike linear games, players choose their path - combat, rescue, or pure survival, offering replayability and varied outcomes.
+- **Open Strategy**: Unlike single-path games, players can choose their own direction of play - combat, rescue or pure survival, offering replayability and varying outcomes.
 
 - **Tiered Endings**: Based on decisions and gameplay outcomes, players are awarded different endings, incentivizing them to revisit the game and alter strategies for different results.
 
@@ -49,6 +49,19 @@ Players navigate treacherous terrains to reach a foreboding castle and free thei
 - **Medium Outcome**: Unable to rescue the ally but the main character survives till the end.
 
 - **Worst Outcome**: Both characters meet their demise or the main character dies before rescuing the ally, resulting in a premature ending.
+
+```mermaid
+graph LR
+A[player] -->|solo play| B(to save ally)
+B --> C{ally survived?}
+C -->|yes| D(can switch between roles)
+D --> E{5min survived?}
+C -->|no| F{5min survived?}
+E -->|yes| G[Best Outcome]
+E -->|no| H[Worst Outcome]
+F -->|yes| I[Medium Outcome]
+F -->|no| J[Worst Outcome]
+```
 
 ## Story and Narrative
 
