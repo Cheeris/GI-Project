@@ -171,10 +171,10 @@ To aid in player navigation, a **minimap** is displayed on the top right of the 
 #### Enemy robots
 
 These robotic adversaries have different characteristics and roles within the game.
-- **Normal Robots:** Average stats in terms of health and attack.
-- **Robot Wall:** High health but lower attack power, acting as durable obstacles.
-- **Robot Knight:** High attack power with a chance of critical hits, but lower health compared to other enemies.
-- **Robot Queen:** A unique enemy that is invulnerable to physical attacks. Can only be affected by hacking. Only appears after rescuing the hacker.
+- **Normal Robots:** Average stats in terms of health and attack. ![normal](https://assetstorev1-prd-cdn.unity3d.com/key-image/c11ed2ee-b85c-47b5-905f-de828ba79ac0.webp)
+- **Robot Wall:** High health but lower attack power, acting as durable obstacles. ![wall](https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/50e48049-ebcd-428e-b454-cffe98b5c317.webp)
+- **Robot Knight:** High attack power with a chance of critical hits, but lower health compared to other enemies. ![knight](https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/2bfe49d3-58d1-46e8-a530-5a5538d541e9.webp)
+- **Robot Queen:** A unique enemy that is invulnerable to physical attacks. Can only be affected by hacking. Only appears after rescuing the hacker. ![queen](https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/4d2f410a-73e8-43a4-83be-773d5f0bd31c.webp)
 
 
 #### Tools
@@ -182,7 +182,7 @@ These robotic adversaries have different characteristics and roles within the ga
 Scattered randomly throughout the map, these items provide immediate benefits when collected by the player (interacted with using the F key).
 - **Bandage:** Heals 5% of the player's health.
 - **Medkit:** Heals 20% of the player's health.
-- **Expresso:** Reduces cooldown times by 50% for the next 20 seconds.
+- **Tinned Food:** Reduces cooldown times by 50% for the next 20 seconds.
 - **Energy Drink:** Increases player's attack power by 30% for the next 20 seconds.
 
 ### Physics
