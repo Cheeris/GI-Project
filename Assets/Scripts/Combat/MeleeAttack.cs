@@ -8,9 +8,12 @@ public class MeleeAttack : MonoBehaviour
     [SerializeField] private float attackRange;
     [SerializeField] private float knockbackForce;
     [SerializeField] private String targetTag;
+
+    private Animator animator;
     // Start is called before the first frame update
     void Start()
     {
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -19,6 +22,7 @@ public class MeleeAttack : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.J))
         {
             attack();
+            animator.SetTrigger("IsAttacking");
         }
     }
 

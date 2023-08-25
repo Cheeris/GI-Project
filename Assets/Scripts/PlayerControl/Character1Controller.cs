@@ -7,11 +7,12 @@ public class Character1Controller : MonoBehaviour
     public float speed;
     public bool isControlled;
     public GameObject character2;
+    private Animator animator;
  
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -29,6 +30,14 @@ public class Character1Controller : MonoBehaviour
             transform.rotation = Quaternion.LookRotation(dir);
             //move forwards with speed(can be modified)
             transform.Translate(Vector3.forward * Time.deltaTime * speed);
+
+            // play the animation of walking forwards
+            animator.SetBool("IsWalkForwards", true);
+            
+        } else
+        {
+            // play the animation of idle
+            animator.SetBool("IsWalkForwards", false);
         }
 
         //AI control the character
