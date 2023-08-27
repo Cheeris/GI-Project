@@ -8,8 +8,8 @@ public class MeleeAttack : MonoBehaviour
     [SerializeField] private float attackRange;
     [SerializeField] private float knockbackForce;
     [SerializeField] private String targetTag;
-
     private Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +19,8 @@ public class MeleeAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.J))
+        // check if the target is enemy so that we can control the character
+        if (targetTag.Equals("Enemy") && Input.GetKeyDown(KeyCode.J))
         {
             attack();
             animator.SetTrigger("IsAttacking");
@@ -52,6 +53,9 @@ public class MeleeAttack : MonoBehaviour
                 enemy.GetComponent<Rigidbody>().AddForce(knockbackDir * knockbackForce);
 
                 enemy.GetComponent<HealthManager>().TakeDamage(gameObject.GetComponent<AttackManager>().getDamage());
+
+                // set the knock back animation to the enemy
+                enemy.GetComponent<Animator>().SetTrigger("IsAttacked");
             }
         }
 
