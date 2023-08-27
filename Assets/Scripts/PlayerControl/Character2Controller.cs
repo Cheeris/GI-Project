@@ -8,6 +8,7 @@ public class Character2Controller : MonoBehaviour
     public bool isControlled;
     public bool isSaved;
     public bool isInQTE;
+    [SerializeField] private GameObject HackAttackProjectile;
 
     // Start is called before the first frame update
     void Start()
@@ -33,12 +34,10 @@ public class Character2Controller : MonoBehaviour
             transform.Translate(Vector3.forward * Time.deltaTime * speed);
         }
 
-        //AI control the character
-        if (!isControlled)
+        if (Input.GetKeyDown(KeyCode.K) && isControlled)
         {
-
+            Instantiate(HackAttackProjectile);
         }
-
 
     }
 

@@ -68,10 +68,10 @@ public class QTEUI : MonoBehaviour
                     image.sprite = right;
                     break;
             }
-        } else if (state == State.fail)
+        } else if (state == State.shutdownFail)
         {
             image.sprite = fail;
-        } else
+        } else if (state == State.shutdownSuccessful)
         {
             image.sprite = success;
         }
@@ -89,7 +89,9 @@ public class QTEUI : MonoBehaviour
     {
         successful,
         fail,
-        inProgress
+        inProgress,
+        shutdownSuccessful,
+        shutdownFail
     }
 
 }
