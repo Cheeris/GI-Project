@@ -656,6 +656,8 @@ MonoBehaviour:
   attackTime: 3
   targetTag: Player
   attackDistance: 2
+  patrolDistance: 5
+  speed: 2
 --- !u!1001 &1733072165
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -724,6 +726,14 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 7ad919050860149498e35689ba2ca058, type: 2}
+    - target: {fileID: 11400040, guid: 49f2055d53eeb4e5a92af590a44bddee, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400042, guid: 49f2055d53eeb4e5a92af590a44bddee, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
