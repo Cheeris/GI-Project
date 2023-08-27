@@ -18,6 +18,7 @@ public class QTE : MonoBehaviour
     private float timer;
     private float shutdownTimer;
     private Character2Controller controller;
+    private GameObject hitEnemy;
     
     // Start is called before the first frame update
     void Start()
@@ -94,14 +95,20 @@ public class QTE : MonoBehaviour
         else if (state == State.successful)
         {
             //TODO: Cause damage to the enemy or make the enemy attack other enemies
+            state = State.shutdownSuccessful;
+            hitEnemy.GetComponent<HealthManager>().TakeDamage(character2.GetComponent<AttackManager>().getDamage());
             Debug.Log("Successful");
-            shutdown();
         } 
         //If QTE fails, cause damage to character 2 and end the QTE
         else if (state == State.fail)
         {
             //TODO: Cause damage to character 2
+            state = State.shutdownFail;
+            character2.GetComponent<HealthManager>().TakeDamage(hitEnemy.GetComponent<AttackManager>().getDamage());
             Debug.Log("Fail");
+        }
+        else if (state == State.shutdownSuccessful || state ==State.shutdownFail)
+        {
             shutdown();
         }
 
@@ -129,7 +136,9 @@ public class QTE : MonoBehaviour
     {
         successful,
         fail,
-        inProgress
+        inProgress,
+        shutdownSuccessful,
+        shutdownFail
     }
 
     public List<KeyCode> getQTEOrder()
@@ -152,5 +161,10 @@ public class QTE : MonoBehaviour
             GameObject UIBackground = this.transform.GetChild(0).gameObject;
             UIBackground.SetActive(false);
         }
+    }
+
+    public void setHitEnemy(GameObject Enemy)
+    {
+        this.hitEnemy = Enemy;
     }
 }
