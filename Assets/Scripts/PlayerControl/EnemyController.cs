@@ -16,7 +16,7 @@ public class EnemyController : MonoBehaviour
 
     private float timeToChangeDirection = 5.0f;
     private Animator animator;
-    private Navigation aiNav;
+    private NavMeshAgent aiNav;
     private float attackCounter = 0;
     private Transform player;
     private bool isPatrolling = true;
@@ -36,8 +36,8 @@ public class EnemyController : MonoBehaviour
         animator.SetBool("IsWalkForwards", true);
 
         // turn on the navigation script
-        aiNav = GetComponent<Navigation>();
-        aiNav.enabled = false;
+        aiNav = GetComponent<NavMeshAgent>();
+        aiNav.isStopped = true;
 
         // get the player object
         player = GameObject.FindGameObjectWithTag(targetTag).transform;
@@ -64,21 +64,21 @@ public class EnemyController : MonoBehaviour
             {
                 ChangeDirection();
             }
-            transform.Translate(transform.forward * speed * Time.deltaTime);
+            transform.Translate(Vector3.forward * speed * Time.deltaTime);
         }
 
         // find the player and start chasing it
         if (isPatrolling && distance <= patrolDistance)
         {
             isPatrolling = false;
-            aiNav.enabled = true;
+            aiNav.isStopped = false;
         }
 
         // lose the target and begin patrolling again
         if (!isPatrolling && distance > patrolDistance)
         {
             isPatrolling = true;
-            aiNav.enabled = false;
+            aiNav.isStopped = true;
             //ChangeDirection();
         }
 
@@ -88,12 +88,12 @@ public class EnemyController : MonoBehaviour
             attackCounter += Time.deltaTime;
             if (attackCounter > attackTime)
             {
-                aiNav.enabled = false;  // turn off the ai navigation
+                aiNav.isStopped = true;  // turn off the ai navigation
                 animator.SetTrigger("IsAttacking");  
                 attackCounter = 0;
             } else
             {
-                aiNav.enabled = false;
+                aiNav.isStopped = true;
                 animator.SetBool("IsWalkForwards", false);
             }
         }
@@ -102,7 +102,7 @@ public class EnemyController : MonoBehaviour
         if (!isPatrolling && distance > attackDistance && distance <= patrolDistance)
         {
             attackCounter = attackTime;  // attack when entering the min attack distance
-            aiNav.enabled = true;
+            aiNav.isStopped = false;
             animator.SetBool("IsWalkForwards", true);
         }
     }
