@@ -48,4 +48,18 @@ public class Character1Controller : MonoBehaviour
 
         
     }
+
+
+    private void OnTriggerStay(Collider other)
+    {
+        Tool tool = other.gameObject.GetComponent<Tool>();
+        //Debug.Log("IN character 1");
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            animator.SetTrigger("Pickup");
+            tool.applyEffect(this.gameObject);
+            Destroy(other.gameObject);
+        }
+    }
+
 }
