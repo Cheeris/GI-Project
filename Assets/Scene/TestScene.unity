@@ -702,9 +702,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54f5f121f478612449d0026ee3bdb2fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 0
-  knockbackForce: 0
-  targetTag: 
+  attackRange: 1
+  knockbackForce: 100
+  targetTag: Enemy
 --- !u!1 &1034022715
 GameObject:
   m_ObjectHideFlags: 0
@@ -1140,9 +1140,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54f5f121f478612449d0026ee3bdb2fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 0
-  knockbackForce: 0
-  targetTag: 
+  attackRange: 1
+  knockbackForce: 100
+  targetTag: Enemy
 --- !u!1 &1355672421
 GameObject:
   m_ObjectHideFlags: 0

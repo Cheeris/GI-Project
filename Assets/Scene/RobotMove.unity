@@ -227,7 +227,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: a7fa87652e796e149bcf74bfcbfdef8f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.34
+      value: -1.83
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a7fa87652e796e149bcf74bfcbfdef8f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -284,6 +284,14 @@ PrefabInstance:
     - target: {fileID: 5866666021909216657, guid: a7fa87652e796e149bcf74bfcbfdef8f, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5961050663516719130, guid: a7fa87652e796e149bcf74bfcbfdef8f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 5961050663516719130, guid: a7fa87652e796e149bcf74bfcbfdef8f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.29
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -477,7 +485,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54f5f121f478612449d0026ee3bdb2fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 1
+  attackX: 0
+  attackY: 0
+  attackZ: 0
   knockbackForce: 0
   targetTag: 
 --- !u!1 &1380899933
@@ -589,8 +599,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54f5f121f478612449d0026ee3bdb2fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 1
-  knockbackForce: 200
+  attackX: 2
+  attackY: 2
+  attackZ: 2
+  knockbackForce: 100
   targetTag: Enemy
 --- !u!114 &1492292325
 MonoBehaviour:
@@ -684,7 +696,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54f5f121f478612449d0026ee3bdb2fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 1
+  attackX: 0
+  attackY: 0
+  attackZ: 0
   knockbackForce: 0
   targetTag: Player
 --- !u!136 &1501974297
@@ -744,7 +758,7 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1501974291}
-  m_Enabled: 1
+  m_Enabled: 0
   m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 3.5
@@ -766,7 +780,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1501974291}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 040c5afb73f89a94a9b2c5ff6cb400aa, type: 3}
   m_Name: 
@@ -779,7 +793,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1501974291}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d7282a2d43b0c542a5272eaa2a4b092, type: 3}
   m_Name: 
@@ -979,7 +993,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54f5f121f478612449d0026ee3bdb2fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 1
+  attackX: 0
+  attackY: 0
+  attackZ: 0
   knockbackForce: 200
   targetTag: Enemy
 --- !u!114 &1757806781

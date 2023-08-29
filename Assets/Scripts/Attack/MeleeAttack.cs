@@ -5,7 +5,9 @@ using UnityEngine;
 
 public class MeleeAttack : MonoBehaviour
 {
-    [SerializeField] private float attackRange;
+    [SerializeField] private float attackX;
+    [SerializeField] private float attackY;
+    [SerializeField] private float attackZ;
     [SerializeField] private float knockbackForce;
     [SerializeField] private String targetTag;
     private Animator animator;
@@ -22,7 +24,7 @@ public class MeleeAttack : MonoBehaviour
         // check if the target is enemy so that we can control the character
         if (targetTag.Equals("Enemy") && Input.GetKeyDown(KeyCode.J))
         {
-            attack();
+            //attack();
             animator.SetTrigger("IsAttacking");
         }
     }
@@ -31,13 +33,13 @@ public class MeleeAttack : MonoBehaviour
     public void attack()
     {
         //Calculate the attack box
-        Vector3 boxSize = new Vector3(attackRange * 2, 2.0f, 1.5f); 
+        Vector3 boxSize = new Vector3(attackX, attackY, attackZ); 
 
         //Calculate the box position
-        Vector3 boxPosition = transform.position + transform.forward * attackRange+ transform.up;
+        Vector3 boxPosition = transform.position + transform.forward * attackZ/2.5f+ transform.up;
 
         //Get all the enemies in the attack box
-        Collider[] hitEnemies = Physics.OverlapBox(boxPosition, boxSize / 2, Quaternion.identity);
+        Collider[] hitEnemies = Physics.OverlapBox(boxPosition, boxSize, Quaternion.identity);
         foreach (Collider enemy in hitEnemies)
         {
             
@@ -64,8 +66,8 @@ public class MeleeAttack : MonoBehaviour
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
-        Vector3 boxSize = new Vector3(attackRange * 2, 2.0f, 1.5f); 
-        Vector3 boxPosition = transform.position + transform.forward * attackRange + transform.up;
+        Vector3 boxSize = new Vector3(attackX, attackY, attackZ); 
+        Vector3 boxPosition = transform.position + transform.forward * attackZ / 2.5f + transform.up;
         Gizmos.DrawWireCube(boxPosition, boxSize);
     }
 }
