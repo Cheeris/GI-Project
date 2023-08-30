@@ -34,6 +34,7 @@ public class EnemyController : MonoBehaviour
         // start walking
         animator = GetComponent<Animator>();
         animator.SetBool("IsWalkForwards", true);
+        animator.SetBool("IsIdle", false);
 
         // turn on the navigation script
         aiNav = GetComponent<NavMeshAgent>();
@@ -48,8 +49,16 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 targetPos = player.position;
-        float distance = Vector3.Distance(targetPos, transform.position);
+        float distance;
+        if (player != null)
+        {
+            Vector3 targetPos = player.position;
+            distance = Vector3.Distance(targetPos, transform.position);
+        } else
+        {
+            distance = Mathf.Infinity;
+        }
+        
         //Debug.Log("Distance: " + distance);
         //Debug.Log("Timer: " + timer);
         //Debug.Log("IsAINav: " + aiNav.enabled);
@@ -57,6 +66,7 @@ public class EnemyController : MonoBehaviour
         // Keep patrolling when it doesn't see the target
         if (isPatrolling && distance > patrolDistance)
         {
+            animator.SetBool("IsWalkForwards", true);
             timer -= Time.deltaTime;
             //Debug.Log("Timer: " + timer);
 
@@ -86,21 +96,25 @@ public class EnemyController : MonoBehaviour
         if (!isPatrolling && distance <= attackDistance)
         {
             attackCounter += Time.deltaTime;
+            animator.SetBool("IsIdle", true);
+            aiNav.isStopped = true;  // turn off the ai navigation
             if (attackCounter > attackTime)
             {
-                aiNav.isStopped = true;  // turn off the ai navigation
-                animator.SetTrigger("IsAttacking");  
+                animator.SetTrigger("IsAttacking");
+                GetComponent<MeleeAttack>().attack();
                 attackCounter = 0;
             } else
             {
-                aiNav.isStopped = true;
+                // still in cooldown time 
                 animator.SetBool("IsWalkForwards", false);
+                //Debug.Log("In CD time");
             }
         }
 
         // keep chasing the target to attack
         if (!isPatrolling && distance > attackDistance && distance <= patrolDistance)
         {
+            animator.SetBool("IsIdle", false);
             attackCounter = attackTime;  // attack when entering the min attack distance
             aiNav.isStopped = false;
             animator.SetBool("IsWalkForwards", true);
@@ -109,8 +123,8 @@ public class EnemyController : MonoBehaviour
 
     private void ChangeDirection()
     {
-        float newX = Random.Range(0, 10);
-        float newZ = Random.Range(0, 10);
+        float newX = Random.Range(-10, 10);
+        float newZ = Random.Range(-10, 10);
         Vector3 newDir = new Vector3(newX, 0, newZ);
         transform.rotation = Quaternion.LookRotation(newDir);
 

@@ -58,6 +58,7 @@ public class MeleeAttack : MonoBehaviour
 
                 // set the knock back animation to the enemy
                 enemy.GetComponent<Animator>().SetTrigger("IsAttacked");
+                enemy.GetComponent<Animator>().SetBool("IsIdle", true);
             }
         }
 
