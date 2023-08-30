@@ -13,12 +13,16 @@ public class Character1Controller : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+        animator.SetBool("IsIdle", true);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (animator.GetBool("IsIdle") == false)
+        {
+            return;
+        }
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
         //get the movement direction
