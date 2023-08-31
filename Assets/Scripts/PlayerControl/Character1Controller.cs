@@ -21,6 +21,7 @@ public class Character1Controller : MonoBehaviour
     {
         if (animator.GetBool("IsIdle") == false)
         {
+            Debug.Log(gameObject.name + " is IDLE!");
             return;
         }
         float horizontal = Input.GetAxis("Horizontal");
@@ -43,6 +44,8 @@ public class Character1Controller : MonoBehaviour
             // play the animation of idle
             animator.SetBool("IsWalkForwards", false);
         }
+
+
 
         //AI control the character
         if (!isControlled)
