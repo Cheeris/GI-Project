@@ -13,12 +13,17 @@ public class Character1Controller : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+        animator.SetBool("IsIdle", true);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (animator.GetBool("IsIdle") == false)
+        {
+            Debug.Log(gameObject.name + " is IDLE!");
+            return;
+        }
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
         //get the movement direction
@@ -39,6 +44,8 @@ public class Character1Controller : MonoBehaviour
             // play the animation of idle
             animator.SetBool("IsWalkForwards", false);
         }
+
+
 
         //AI control the character
         if (!isControlled)
