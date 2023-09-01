@@ -7,11 +7,10 @@ public class HealthManager : MonoBehaviour
 {
     [SerializeField] private int health;
 
-    private HealthBar healthbar;
+    [SerializeField] private HealthBar healthbar;
     // Start is called before the first frame update
     void Start()
     {
-        healthbar = gameObject.transform.Find("HealthBarCanvas").gameObject.transform.Find("HealthBar").gameObject.GetComponent<HealthBar>();
         healthbar.SetMaxHealth(health);
     }
 
