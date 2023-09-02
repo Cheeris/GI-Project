@@ -33,7 +33,7 @@ public class MeleeAttack : MonoBehaviour
         // check if the target is enemy so that we can control the character
         if (targetTag.Equals("Enemy") && Input.GetKeyDown(KeyCode.J) && timer <= 0 && attackable)
         {
-            attack();
+            //attack();
             animator.SetTrigger("IsAttacking");
             timer = coolDownTime;
         }
