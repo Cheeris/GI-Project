@@ -4,7 +4,6 @@ using UnityEngine;
 using System;
 using System.Linq;
 using System.Runtime.CompilerServices;
-using UnityEditor.UI;
 using System.Threading;
 
 public class QTE : MonoBehaviour
