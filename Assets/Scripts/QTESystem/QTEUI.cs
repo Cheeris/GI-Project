@@ -52,22 +52,25 @@ public class QTEUI : MonoBehaviour
                     break;
             }
                
-                    
-            switch (QTEOrder[0])
+            if (QTEOrder.Count != 0)
             {
-                case KeyCode.W:
-                    image.sprite = up;
-                    break;
-                case KeyCode.A:
-                    image.sprite = left;
-                    break;
-                case KeyCode.S:
-                    image.sprite = down;
-                    break;
-                case KeyCode.D:
-                    image.sprite = right;
-                    break;
+                switch (QTEOrder[0])
+                {
+                    case KeyCode.W:
+                        image.sprite = up;
+                        break;
+                    case KeyCode.A:
+                        image.sprite = left;
+                        break;
+                    case KeyCode.S:
+                        image.sprite = down;
+                        break;
+                    case KeyCode.D:
+                        image.sprite = right;
+                        break;
+                }
             }
+            
         } else if (state == State.shutdownFail)
         {
             image.sprite = fail;

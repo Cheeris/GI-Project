@@ -14,7 +14,7 @@ public class HackAttack : MonoBehaviour
         character2 = GameObject.Find("Character2");
         controller = character2.GetComponent<Character2Controller>();
         QTESystem = GameObject.Find("Canvas").GetComponent<QTE>();
-        transform.position = character2.transform.position;
+        transform.position = character2.transform.position + new Vector3(0,1,0);
         velocity = character2.transform.forward;
     }
 
@@ -29,6 +29,7 @@ public class HackAttack : MonoBehaviour
         if (other.tag == "Enemy")
         {
             QTESystem.enabled = true;
+            Debug.Log(other.name);
             QTESystem.setHitEnemy(other.gameObject);
             // Make the enemy cannot move 
             Destroy(gameObject);

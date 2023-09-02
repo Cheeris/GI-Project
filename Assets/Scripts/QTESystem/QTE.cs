@@ -96,7 +96,7 @@ public class QTE : MonoBehaviour
         {
             //TODO: Cause damage to the enemy or make the enemy attack other enemies
             state = State.shutdownSuccessful;
-            hitEnemy.GetComponent<HealthManager>().TakeDamage(character2.GetComponent<AttackManager>().getDamage());
+            hitEnemy.GetComponent<HealthManager>().TakeDamage(character2.GetComponent<AttackManager>().getDamage()*10);
             Debug.Log("Successful");
         } 
         //If QTE fails, cause damage to character 2 and end the QTE

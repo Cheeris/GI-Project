@@ -343,6 +343,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  healthbar: {fileID: 0}
 --- !u!114 &860178721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -676,6 +677,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  healthbar: {fileID: 0}
 --- !u!114 &943456059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -702,8 +704,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54f5f121f478612449d0026ee3bdb2fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 1
+  attackX: 0
+  attackY: 0
+  attackZ: 0
   knockbackForce: 100
+  coolDownTime: 1
   targetTag: Enemy
 --- !u!1 &1034022715
 GameObject:
@@ -1114,6 +1119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  healthbar: {fileID: 0}
 --- !u!114 &1098580331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1140,8 +1146,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54f5f121f478612449d0026ee3bdb2fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 1
+  attackX: 0
+  attackY: 0
+  attackZ: 0
   knockbackForce: 100
+  coolDownTime: 1
   targetTag: Enemy
 --- !u!1 &1355672421
 GameObject:
@@ -1662,7 +1671,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1973733084
 RectTransform:
   m_ObjectHideFlags: 0

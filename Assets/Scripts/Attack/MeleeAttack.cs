@@ -11,22 +11,27 @@ public class MeleeAttack : MonoBehaviour
     [SerializeField] private float knockbackForce;
     [SerializeField] private float coolDownTime = 1.0f;
     [SerializeField] private String targetTag;
+    private bool attackable;
 
     private Animator animator;
     private float timer;
-
     // Start is called before the first frame update
     void Start()
     {
+        attackable = false;
         animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        timer -= Time.deltaTime;
+        if (timer >= 0)
+        {
+            timer -= Time.deltaTime;
+        }
+        
         // check if the target is enemy so that we can control the character
-        if (targetTag.Equals("Enemy") && Input.GetKeyDown(KeyCode.J) && timer <= 0)
+        if (targetTag.Equals("Enemy") && Input.GetKeyDown(KeyCode.J) && timer <= 0 && attackable)
         {
             //attack();
             animator.SetTrigger("IsAttacking");
@@ -76,5 +81,15 @@ public class MeleeAttack : MonoBehaviour
         Vector3 boxSize = new Vector3(attackX, attackY, attackZ); 
         Vector3 boxPosition = transform.position + transform.forward * attackZ / 2.5f + transform.up;
         Gizmos.DrawWireCube(boxPosition, boxSize);
+    }
+
+    public bool isAttackable()
+    {
+        return attackable;
+    }
+
+    public void setAttackable(bool attackable)
+    {
+        this.attackable = attackable;
     }
 }

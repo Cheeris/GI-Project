@@ -8,10 +8,11 @@ public class Character1Controller : MonoBehaviour
     public bool isControlled;
     public GameObject character2;
     private Animator animator;
- 
+    private MeleeAttack meleeAttack;
     // Start is called before the first frame update
     void Start()
     {
+        meleeAttack = GetComponent<MeleeAttack>();
         animator = GetComponent<Animator>();
         animator.SetBool("IsIdle", true);
     }
@@ -28,29 +29,36 @@ public class Character1Controller : MonoBehaviour
         float vertical = Input.GetAxis("Vertical");
         //get the movement direction
         Vector3 dir = new Vector3(horizontal, 0, vertical);
-        if (dir != Vector3.zero && isControlled)
+        if (isControlled)
         {
-            //change the rotation of the character
-
-            transform.rotation = Quaternion.LookRotation(dir);
-            //move forwards with speed(can be modified)
-            transform.Translate(Vector3.forward * Time.deltaTime * speed);
-
-            // play the animation of walking forwards
-            animator.SetBool("IsWalkForwards", true);
+            if (!meleeAttack.isAttackable())
+            {
+                meleeAttack.setAttackable(true);
+            }
             
+            if (dir != Vector3.zero)
+            {
+                //change the rotation of the character
+
+                transform.rotation = Quaternion.LookRotation(dir);
+                //move forwards with speed(can be modified)
+                transform.Translate(Vector3.forward * Time.deltaTime * speed);
+
+                // play the animation of walking forwards
+                animator.SetBool("IsWalkForwards", true);
+
+            }
+            else
+            {
+                // play the animation of idle
+                animator.SetBool("IsWalkForwards", false);
+            }
         } else
         {
-            // play the animation of idle
-            animator.SetBool("IsWalkForwards", false);
-        }
-
-
-
-        //AI control the character
-        if (!isControlled)
-        {
-
+            if (meleeAttack.isAttackable())
+            {
+                meleeAttack.setAttackable(false);
+            }
         }
 
         
