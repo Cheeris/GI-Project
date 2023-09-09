@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class SaveCharacter2 : MonoBehaviour
 {
+    [SerializeField] private GameObject shownTimer;
     private GameObject parent;
     private float timer;
     public GameObject character1;
@@ -12,14 +14,17 @@ public class SaveCharacter2 : MonoBehaviour
     private int indices = 36;
     private float radius = 3.5f;
     private float lineWidth = 0.1f;
+    private int saveTotalTime = 3;
     private Vector3 center;
     private Rigidbody rb;
+
     // Start is called before the first frame update
     void Start()
     {
         parent = transform.parent.gameObject;
         rb = parent.GetComponent<Rigidbody>();
         timer = 0;
+        shownTimer.SetActive(false);
 
         center = transform.parent.position;
         lineRenderer = GetComponent<LineRenderer>();
@@ -32,13 +37,14 @@ public class SaveCharacter2 : MonoBehaviour
     void Update()
     {
         //If character 1 is inside the circle for 3 seconds, character is saved (Can be controlled and switched)
-        if (timer >= 3)
+        if (timer >= saveTotalTime)
         {
-            parent.GetComponent<Character2Controller>().isSaved = true;
+            parent.GetComponent<AlienController>().isSaved = true;
             parent.GetComponent<NavMeshAgent>().enabled = true;
             parent.GetComponent<Navigation>().enabled = true;
             rb.constraints &= ~RigidbodyConstraints.FreezePositionX;
             rb.constraints &= ~RigidbodyConstraints.FreezePositionZ;
+            shownTimer.SetActive(false);
             gameObject.SetActive(false);
         }
     }
@@ -49,6 +55,13 @@ public class SaveCharacter2 : MonoBehaviour
         if (other.gameObject == character1)
         {
             timer += Time.deltaTime;
+
+            float leftTime = saveTotalTime - timer;
+            //int minute = (int)(leftTime)
+            //float second = leftTime % 60;
+            shownTimer.SetActive(true);
+            shownTimer.GetComponent<TMP_Text>().text = string.Format("{0:0.00}", leftTime);
+
             Debug.Log(timer);
         }
         
@@ -58,8 +71,9 @@ public class SaveCharacter2 : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         timer = 0;
+        shownTimer.SetActive(false);
     }
-    
+
     //Draw a circle to indicate the save range of the character 2
     private void CreateCircle(int indices, float radius)
     {

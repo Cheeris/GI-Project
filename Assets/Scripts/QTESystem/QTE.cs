@@ -16,7 +16,7 @@ public class QTE : MonoBehaviour
     private State state;
     private float timer;
     private float shutdownTimer;
-    private Character2Controller controller;
+    private AlienController controller;
     private GameObject hitEnemy;
     
     // Start is called before the first frame update
@@ -117,7 +117,7 @@ public class QTE : MonoBehaviour
     {
         shutdownTimer = 0;
         timer = 0;
-        controller = character2.GetComponent<Character2Controller>();
+        controller = character2.GetComponent<AlienController>();
         controller.setIsInQTE(true);
         state = State.inProgress;
         QTEOrder.Clear();

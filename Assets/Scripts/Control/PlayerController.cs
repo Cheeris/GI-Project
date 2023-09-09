@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Character1Controller : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     public float speed;
     public bool isControlled;
-    public GameObject character2;
+
     private Animator animator;
     private MeleeAttack meleeAttack;
     // Start is called before the first frame update
